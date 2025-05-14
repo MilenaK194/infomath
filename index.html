@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Moje edukativno sjedište</title>
-    </head>
-    <body>
-        <h1>Dobrodošli!</h1>
-        <p>Ovdje možete pronaći edukativne sadržaje iz matematike i informatike</p>
-    </body>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoMath</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #00695c;
+      text-shadow: 1px 1px 1px #aaa;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px 50px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 1.5rem;
+      color: #00796b;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      width: 200px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Dobrodošli na InfoMath!</h1>
+  <div class="menu">
+    <a href="matematika.html" class="card">📐 Matematika</a>
+    <a href="informatika.html" class="card">💻 Informatika</a>
+  </div>
+</body>
 </html>
