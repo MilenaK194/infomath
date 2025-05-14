@@ -8,21 +8,49 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #e3f2fd;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
+      background: #e3f2fd url('https://www.transparenttextures.com/patterns/graphy.png');
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #0d47a1;
+      text-align: center;
     }
     h1 {
-      color: #1565c0;
+      font-size: 3rem;
+      margin-bottom: 0.5em;
     }
-    a {
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+    a.button {
+      margin-top: 2em;
       display: inline-block;
-      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #1976d2;
+      color: white;
       text-decoration: none;
-      color: #0d47a1;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #0d47a1;
     }
   </style>
 </head>
 <body>
+  <h1>📐 Matematika</h1>
+  <p>Dobrodošla na matematičku stranicu! Ovdje ćeš pronaći interaktivne zadatke, kvizove i objašnjenja za svaki razred. Cilj nam je povezati matematiku sa stvarnim životom.</p>
+  <a class="button" href="index.html">← Natrag na početnu</a>
+</body>
+</html>
+
   <h1>Matematika</h1>
   <p>Ovdje ćeš pronaći zanimljive zadatke, kvizove i objašnjenja vezana uz matematiku.</p>
   <a href="index.html">← Natrag na početnu</a>
